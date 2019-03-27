@@ -1,0 +1,13 @@
+syntax = "proto3";
+package scheme;
+
+message ParentObject {
+    string id = 1;
+    string name = 2;
+    repeated ChildObject children = 3;
+}
+
+message ChildObject {
+    string id = 1;
+    string name = 2;
+}
